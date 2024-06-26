@@ -5,26 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
     <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/gallery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <div class="header">
         <img src="static/images/icon.png" alt="Bird Image">
         <h1>WEBSITE</h1>
     </div>
+    <section id="about">
+        <h2>About Boba Tea</h2>
+        <p>Boba tea, also known as bubble tea, is a Taiwanese tea-based drink that has become popular worldwide. It typically contains tea, milk, and chewy tapioca pearls.</p>
+    </section>
+    <section id="types">
+        <h2>Boba Tea I wanna Try</h2>
+        <div class="cardBoba">
+            <h3>Classic Milk Tea</h3>
+            <p>A traditional boba tea made with black tea, milk, and tapioca pearls.</p>
+        </div>
+        <div class="cardBoba"">
+            <h3>Jasmine milk tea</h3>
+            <p>Jasmine flowers bring Boba a distinctive scent. It balances nicely against the intense sourness in the base tea, which is typically green.</p>
+        </div>
+        <div class="cardBoba">
+            <h3>Taro Milk Tea</h3>
+            <p>Taro Milk Tea with Sago. Taro Milk Tea is a popular boba flavor that offers a departure from traditional tea flavors, introducing a unique and captivating</p>
+        </div>
+    </section>
     <div class="main">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="container">
+              <div class="box mySwiper">
+                <div class="content swiper-wrapper">
+                  <div class="card swiper-slide">
+                    <div class="card-content">
+                      <div class="image">
+                        <img src="https://i.ebayimg.com/images/g/hbgAAOSw-dBTuACj/s-l400.jpg" alt="">
+                      </div>
+                      <div class="type">
+                        <span class="name">Basic Info</span>
+                        <span class="name2">Name, Age, Grade etc</span>
+                        <center><span class="description">My name is Ye Gao and currently, I'm in grade 10. I was born a male
+                            and identify as he/him. This portfolio was done for Baba and I hoped you enjoy <br> it
+                            so far!</span></center>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card swiper-slide">
+                    <div class="card-content">
+                      <div class="image">
+                        <img
+                          src="https://www.ctvnews.ca/content/dam/ctvnews/en/images/2020/8/20/classroom-1-5071991-1706662805091.jpg"
+                          alt="">
+                      </div>
+                      <div class="type">
+                        <span class="name">Hack Club</span>
+                        <span class="name2"</span>
+                        <center><span class="description">I Joined hack club beacause I wish to learn to code, and it seem fun. </span></center><br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card swiper-slide">
+                    <div class="card-content">
+                      <div class="image">
+                        <img src="https://en.wikipedia.org/wiki/Python_%28programming_language%29#/media/File:Python-logo-notext.svg" alt="">
+                      </div>
+                      <div class="type">
+                        <span class="name">Coding Language</span>
+                        <span class="name2">Python</span>
+                        <center><span class="description">I learned how to use python for about half year now or a semster, and I hoping to learn Java to become a robotic coder.</span></center><br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card swiper-slide">
+                    <div class="card-content">
+                      <div class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Sport_balls.svg" alt="">
+                      </div>
+                      <div class="type">
+                        <span class="name">What Boba I'm Buying</span>
+                        <center><span class="name2">I haven't drank alot of boba but I my friend recmmended me jasmine milk tea with taro and brown sugar pearls will see how that goes.</span></center><br><br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
     </div>
-    <div class="main">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+                    
     <div class="footer">
         <div>
             <h3>Hello</h3>
@@ -49,7 +119,10 @@
                 </ul>
             </div>
         </div>
-
+        <!-- swiper js -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <!-- Gallery js -->
+        <script src="static/js/gallery.js"></script>
     </div>
 </body>
 </html>
