@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
-    <link rel="stylesheet" href="static/style.css">
-    <link rel="stylesheet" href="static/gallery.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/gallery.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
@@ -67,7 +67,7 @@
                   <div class="card swiper-slide">
                     <div class="card-content">
                       <div class="image">
-                        <img src="https://en.wikipedia.org/wiki/Python_%28programming_language%29#/media/File:Python-logo-notext.svg" alt="">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="">
                       </div>
                       <div class="type">
                         <span class="name">Coding Language</span>
@@ -79,7 +79,7 @@
                   <div class="card swiper-slide">
                     <div class="card-content">
                       <div class="image">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Sport_balls.svg" alt="">
+                        <img src="https://takestwoeggs.com/wp-content/uploads/2022/04/Jasmine-Milk-Tea-Takestwoeggs-Final-Photography-sq.jpg" alt="">
                       </div>
                       <div class="type">
                         <span class="name">What Boba I'm Buying</span>
@@ -96,19 +96,28 @@
     </div>
                     
     <div class="footer">
-        <div>
-            <h3>Hello</h3>
-            <ul>
-                <li>Content</li>
-                <li>Content</li>
-                <li>Content</li>
-                <li>Content</li>
-                <li>Content</li>
-                <li>Content</li>
-            </ul>
-        </div>
+        <section id="types">
+            <h2>Contact Me</h2>
+            <div>
+                <form method = "post" action="/send">
+                    <div class="cardBoba">
+                        <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
+                        <input type="email" class="form-control" id="email" placeholder="Email*" name="email">
+                    </div>
+                    <div class="cardBoba">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+                    </div>
+                    <div class="cardBoba">
+                        <textarea class="form-control" rows="8" id="comment" placeholder="Message" name="message"" ></textarea>
+                        <button class="contact-btn" type="submit">Save Data</button>
+                    </div>
+                </form>
+            </div>
+        </section>
         <hr>
-        <div class="contact">
+        
+        
+         <div class="contact">
             <h3>Social Media</h3>
             <div class="social-icons">
                 <ul>
@@ -119,6 +128,7 @@
                 </ul>
             </div>
         </div>
+        
         <!-- swiper js -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <!-- Gallery js -->
